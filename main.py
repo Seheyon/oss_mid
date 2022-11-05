@@ -9,6 +9,10 @@ def askToquit(): #종료 함수
             next_calculation = input("Are you sure? (yes/no): ")
             if next_calculation.lower() == "yes":
                 break
+
+            elif next_calculation.lower() == "no":
+                return 1
+
             elif next_calculation.lower() != "no":
                 print(next_calculation + " ?")
 
